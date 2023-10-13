@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 把所有的有 margin 的區塊元素 margin 變 0 ，可和 reset 檔案 擇一 */
+/* * {
+      margin: 0;
+    } */
+
+#header {
+  width: 100%;
+  height: 60px;
+  background: lightblue;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#sidebar {
+  /* view port height */
+  height: calc(100vh - 60px);
+  width: 200px;
+  background: lightgoldenrodyellow;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  overflow: auto;
+}
+
+#content {
+  width: calc(100% - 15%);
+  margin-left: 15%;
+  background: lightgreen;
+  top: calc(100vh-60px)
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar li {
+  background-color: lightblue;
+  height: 35px;
+}
+
+#sidebar .title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 0;
+  background-color: light;
+}
+
+/* .list {
+      width: 100%;
+      border-bottom: 1px solid gray;
+    } */
+
+.box {
+  padding: 12px;
+  border-bottom: 1px solid gray;
+}
+
+.copyright {
+  padding: 12px;
+
+}
