@@ -14,86 +14,369 @@
   <link rel="stylesheet" href="./css/all.css">
   <!-- 自己的外部樣式表 -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- icons：google font 
+    weight：200, grade：0, OpticalSize：24 -->
 
 </head>
 
 <body>
-  <div id="header"></div>
-  <div id="sidebar">
+  <!-- Header----------------------------------------------- -->
+  <div id="header">
+    <div id="first"></div>
+    <div id="medium"></div>
+    <div id="last"></div>
 
-    <div class="box">
-      <ul class="list">
-        <li><i class="fa-solid fa-house" style="color: #282b2b;"></i> 首頁</li>
-        <li>Shorts</li>
-        <li>訂閱內容</li>
-      </ul>
-    </div>
 
-    <div class="box">
-      <ul class="list">
-        <li>媒體庫</li>
-        <li>觀看紀錄</li>
-        <li>你的影片</li>
-        <li>稍後觀看</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <div class="title">探索</div>
-      <ul class="list">
-        <li>發燒影片</li>
-        <li>音樂</li>
-        <li>電影</li>
-        <li>直播</li>
-        <li>遊戲</li>
-        <li>新聞</li>
-        <li>體育</li>
-        <li>Podcast</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <div class="title">更多 YouTube 功能</div>
-      <ul class="list">
-        <li>YouTube Premium</li>
-        <li>YouTube Music</li>
-        <li>YouTube Kids</li>
-      </ul>
-    </div>
-
-    <div class="box">
-      <ul class="list">
-        <li>設定</li>
-        <li>檢舉紀錄</li>
-        <li>說明</li>
-        <li>提供意見</li>
-      </ul>
-    </div>
-
-    <div class="copyright">&copy;2023 wenchicheng</div>
-
+    <img id="menu" src="./images/icons/menu_FILL0.svg">
+    <img id="logo" src="./images/yt_logo_rgb_dark.png
+    " alt="youtube">
+    <p>TW</p>
   </div>
 
 
-  <div id="content">
-    <!-- 卡片區 -->
-    <div id="card">
-      <div id="video">
-        <img src="https://i2.ytimg.com/vi/zm-_uHO8Rk0/0.jpg" alt="反骨羽庭《美型植髮》拯救稀疏困擾" title="反骨羽庭《美型植髮》拯救稀疏困擾">
+  <!-- BigBox----------------------------------------------- -->
+  <div id="bigbox">
+
+    <!-- Sidebar----------------------------------------------- -->
+    <div id="sidebar">
+      <div class="box">
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">首頁</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src=" ./images/icons/home_FILL0.svg" alt="home"
+                title="home">Shorts</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src=" ./images/icons/home_FILL0.svg" alt="home"
+                title="home">訂閱內容</a>
+          </li>
+        </ul>
       </div>
-      <div id="details">
-        <div id="avatar"></div>
-        <div id="meta">
-          <h3>反骨羽庭《美型植髮》拯救稀疏困擾</h3>
-          <div id="channel"></div>
-          <div id="meta-line"></div>
+
+
+      <div class="box">
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">媒體庫</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">觀看紀錄</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">你的影片</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">稍後觀看</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="title">探索</div>
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">發燒影片</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">音樂</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">電影</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">直播</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">遊戲</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">新聞</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">體育</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">Podcast</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="title">更多 YouTube 功能</div>
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">YouTube
+              Premium</a></li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">YouTube
+              Music</a></li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">YouTube
+              Kids</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">設定</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">檢舉紀錄</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home" title="home">說明</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><img src="./images/icons/home_FILL0.svg" alt="home"
+                title="home">提供意見</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">&copy;2023 wenchicheng</div>
+
+    </div>
+
+    <!-- Container----------------------------------------------- -->
+    <div id="container">
+
+      <!-- -------Selector-------- -->
+      <div id="selector">
+        <div>
+          <a href="">全部</a>
+          <a href="">音樂</a>
+          <a href="">已訂閱</a>
+          <a href="">直播中</a>
+          <a href="">美容</a>
+        </div>
+      </div>
+
+      <!-- -------Content-------- -->
+      <div class="content">
+
+        <!-- 卡片區 -->
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="https://www.youtube.com/@shasha77"><img src="./images/avatar/01.jpg"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
         </div>
 
 
+
       </div>
     </div>
 
+
   </div>
+
 </body>
 
 </html>
