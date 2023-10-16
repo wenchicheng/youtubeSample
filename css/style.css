@@ -24,17 +24,16 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  position: relative;
   font-size: 0;
 }
 
-#bigbox {
+/* #bigbox {
   width: 100%;
   height: calc(100vh - 60px);
   position: fixed;
   top: 60px;
-  /* 為什麼沒有滾輪!!?????? */
-}
+
+} */
 
 #selector {
   width: calc(100vw - 248px);
@@ -55,14 +54,17 @@ body {
   /* background: lightgoldenrodyellow; */
   left: 0;
   top: 60px;
+  position: fixed;
+  overflow: auto;
 }
 
 #container {
-  position: fixed;
+  /* position: fixed; */
   right: 0;
   top: 60px;
   width: calc(100vw - 248px);
-  height: 2000px;
+  margin-left: 248px;
+  margin-top: 120px;
 }
 
 .content {
@@ -70,7 +72,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  position: fixed;
+  /* position: fixed; */
   right: 0;
   top: 120px;
   color: white;
@@ -83,21 +85,41 @@ body {
   background-color: darkblue;
   width: 244px;
   height: 60px;
-  display: inline-block;
+  display: block;
+  float: left;
 }
 
 #medium {
   background-color: darkgreen;
-  width: calc(100% - 448px);
+  width: calc(100% - 444px);
   height: 60px;
-  display: inline-block;
+  display: block;
+  float: left;
 }
+
+#medium input {
+  width: 600px;
+  height: 36px;
+  appearance: none;
+  border: none;
+  border-radius: 16px;
+  background-color: #464646;
+  color: white;
+  font-size: 1rem;
+}
+
+/* 改變搜尋的預設文字 placeholder 的顏色 */
+::placeholder {
+  color: #ffffff;
+}
+
 
 #last {
   background-color: darkslategray;
   width: 200px;
   height: 60px;
-  display: inline-block;
+  display: block;
+  float: right;
 
 }
 
@@ -160,6 +182,7 @@ body {
   height: 2.5rem;
   width: 90%;
   line-height: 2.5rem;
+  padding-left: 20px;
 
 }
 
@@ -188,6 +211,10 @@ body {
   margin: 0;
   background-color: light;
   color: white;
+}
+
+#sidebar .icon {
+  margin-right: 20px;
 }
 
 
