@@ -1,5 +1,7 @@
 /* 把所有的有 margin 的區塊元素 margin 變 0 ，可和 reset 檔案 擇一 */
-* {
+*,
+*::before,
+*::after {
   /* 寫最前面 */
   margin: 0;
   padding: 0;
