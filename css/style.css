@@ -172,6 +172,7 @@ body {
 
 
 /* SIDEBAR -------------------------------------*/
+  top: 60px;
 
 #sidebar ul {
   margin: 0;
