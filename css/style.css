@@ -49,24 +49,36 @@ body {
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  position: relative;
 }
 
 #medium input {
-  width: 600px;
+  width: 500px;
   height: 36px;
   appearance: none;
   border: none;
-  border-radius: 16px;
+  border-radius: 16px 0 0 16px;
   background-color: #464646;
   color: white;
   font-size: 1rem;
-  vertical-align: -35px;
+  /* vertical-align: -35px; */
   /* display: block; */
   /* margin: 12px auto 0; */
-  /* position: absolute;
-  left: 50%;
+  position: absolute;
+  left: 45%;
   top: 50%;
-  transform: translate(-50%, -50%) */
+  transform: translate(-50%, -50%)
+}
+
+#search-btn {
+  width: 100px;
+  height: 36px;
+  border-radius: 0 16px 16px 0;
+  background-color: #464646;
+  position: absolute;
+  left: 74%;
+  top: 50%;
+  transform: translate(-50%, -50%)
 }
 
 /* 改變搜尋的預設文字 placeholder 的顏色 */
@@ -240,7 +252,7 @@ body {
 }
 
 #selector {
-  width: calc(100vw - 248px);
+  width: calc(100vw - 266px);
   height: 60px;
   background: black;
   position: fixed;
