@@ -16,6 +16,36 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+
+/* ICON---------------------------------- */
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.google-icon {
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+
+
+
+
+.icon {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+
 /* HEADER------------------------------- */
 
 
@@ -52,33 +82,49 @@ body {
   position: relative;
 }
 
-#medium input {
-  width: 500px;
+#medium #input-radius {
+  width: 550px;
   height: 36px;
+  border: 1px solid #464646;
+  border-radius: 16px 0 0 16px;
+  background-color: black;
+  position: relative;
+  left: 28%;
+  top: 20%;
+}
+
+#medium input {
+  width: 530px;
+  height: 30px;
   appearance: none;
   border: none;
-  border-radius: 16px 0 0 16px;
-  background-color: #464646;
+  background-color: black;
   color: white;
-  font-size: 1rem;
+  font-size: 16px;
   /* vertical-align: -35px; */
   /* display: block; */
   /* margin: 12px auto 0; */
   position: absolute;
-  left: 45%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%)
 }
 
 #search-btn {
-  width: 100px;
+  width: 60px;
   height: 36px;
   border-radius: 0 16px 16px 0;
-  background-color: #464646;
+  background-color: #282828;
   position: absolute;
-  left: 74%;
+  left: 105%;
   top: 50%;
   transform: translate(-50%, -50%)
+}
+
+#search-icon {
+  position: absolute;
+  top: 6px;
+  right: 20px;
 }
 
 /* 改變搜尋的預設文字 placeholder 的顏色 */
@@ -102,7 +148,7 @@ body {
   border: 1px solid #6c6c6c;
   border-radius: 16px;
   margin: 12px 40px 0 auto;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   /* text-align: center; */
   line-height: 30px;
@@ -154,6 +200,7 @@ body {
   top: 60px;
   position: fixed;
   overflow: auto;
+  font-size: 14px;
 }
 
 #sidebar ul {
@@ -196,9 +243,6 @@ body {
   color: white;
 }
 
-#sidebar .icon {
-  margin-right: 20px;
-}
 
 #sidebar img {
   scale: 120%;
@@ -222,9 +266,17 @@ body {
   width: 100%;
 } */
 
-.copyright {
-  padding: 12px;
+.guildLinks {
+  font-size: 12px;
+  color: #969696;
+  line-height: 20px;
+}
 
+.copyright {
+  width: 200px;
+  height: 60px;
+  padding-top: 14px;
+  color: #969696;
 }
 
 /* CONTAINER-------------------------------------------------*/
@@ -242,6 +294,7 @@ body {
   width: calc(100vw - 248px);
   margin-right: auto;
   margin-left: auto;
+  padding-left: 20px;
   display: block;
   /* position: fixed; */
   right: 0;
@@ -294,7 +347,7 @@ body {
   /* background-color: aqua; */
   margin: 16px 8px;
   /* z-index: 5; */
-  font-size: 1rem;
+  font-size: 14px;
   color: white;
 }
 
@@ -338,7 +391,7 @@ body {
 
 .vtitle {
   line-height: 1.3;
-  font-size: 1rem;
+  font-size: 14px;
   width: 300px;
   max-height: 44px;
   /* background-color: rgb(60, 255, 0); */
@@ -347,7 +400,7 @@ body {
 
 .channel {
   line-height: 1.3;
-  font-size: 0.9rem;
+  font-size: 12px;
   width: 300px;
   height: 20px;
   color: #969696;
@@ -357,7 +410,7 @@ body {
 
 .meta-line {
   line-height: 1.3;
-  font-size: 0.9rem;
+  font-size: 12px;
   width: 300px;
   height: 20px;
   color: #969696;
