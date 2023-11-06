@@ -29,6 +29,15 @@ body {
     'opsz' 24
 }
 
+/* icon hover 黑白換色*/
+#sidebar a:hover .material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 .google-icon {
   margin-right: 10px;
   margin-left: 15px;
@@ -82,6 +91,15 @@ body {
   position: relative;
 }
 
+#searchAera {
+  width: 680px;
+  height: 60px;
+  /* background-color: darkblue; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 #medium #input-radius {
   width: 550px;
   height: 36px;
@@ -89,8 +107,9 @@ body {
   border-radius: 16px 0 0 16px;
   background-color: black;
   position: relative;
-  left: 28%;
-  top: 20%;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #medium input {
@@ -127,6 +146,28 @@ body {
   right: 20px;
 }
 
+#voiceSearch-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #282828;
+  position: absolute;
+  left: 630px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+#voiceSearch-btn:hover {
+  background-color: #464646;
+}
+
+#voiceSearch-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* 改變搜尋的預設文字 placeholder 的顏色 */
 ::placeholder {
   color: #ffffff;
@@ -139,19 +180,53 @@ body {
   height: 60px;
   display: block;
   float: right;
+  position: relative;
+
 }
 
-#login {
+#more {
+  width: 30px;
+  height: 24px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+.login {
   /* block 區塊元素 */
   width: 80px;
   height: 36px;
-  border: 1px solid #6c6c6c;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  margin: 12px 40px 0 auto;
+  /* margin: 12px 40px 0 auto; */
   font-size: 14px;
-  color: white;
+  color: #3ea6ff;
   /* text-align: center; */
   line-height: 30px;
+  position: relative;
+}
+
+.login:hover {
+  background-color: rgba(90, 145, 222, 0.376)
+}
+
+.login-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.loginWords {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
 }
 
 #header p {
@@ -260,6 +335,12 @@ body {
   width: 28px;
   height: 20px;
   transform: translateY(20%);
+}
+
+.guild {
+  font-size: 14px;
+  color: white;
+  line-height: 20px;
 }
 
 /* .item {
@@ -396,6 +477,12 @@ body {
   max-height: 44px;
   /* background-color: rgb(60, 255, 0); */
   margin: 3px 0;
+  /* 多行文字省略號 */
+  /* https://netivism.com.tw/blog/492 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .channel {
@@ -406,6 +493,10 @@ body {
   color: #969696;
   margin-top: 8px;
   /* background-color: rgb(195, 173, 173); */
+  /* 單行省略號 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .meta-line {
