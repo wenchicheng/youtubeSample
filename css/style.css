@@ -1,0 +1,596 @@
+/* 把所有的有 margin 的區塊元素 margin 變 0 ，可和 reset 檔案 擇一 */
+*,
+*::before,
+*::after {
+  /* 寫最前面 */
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid rgb(120, 4, 4); */
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+
+body {
+  background-color: black;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+/* ICON---------------------------------- */
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* icon hover 黑白換色*/
+#sidebar a:hover .material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.google-icon {
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+
+
+.icon {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+/* 卷軸-------------------------------- */
+
+
+
+/* 底色 */
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ffc0cb;
+}
+
+/* 寬度 */
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: black;
+}
+
+/* 本體顏色 */
+.scrollbar:-webkit-scrollbar-thumb {
+  background-color: #bb6573;
+}
+
+
+
+
+
+/* HEADER------------------------------- */
+
+
+#header {
+  width: 100%;
+  height: 60px;
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 0;
+  z-index: 2;
+}
+
+#first {
+  /* background-color: darkblue; */
+  width: 244px;
+  height: 60px;
+  display: block;
+  float: left;
+}
+
+#medium {
+  /* background-color: darkgreen; */
+  width: calc(100% - 444px);
+  height: 60px;
+  display: block;
+  float: left;
+  /* position: relative; */
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+#searchAera {
+  width: 680px;
+  height: 60px;
+  /* background-color: darkblue; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#medium #input-radius {
+  width: 550px;
+  height: 36px;
+  border: 1px solid #464646;
+  border-radius: 16px 0 0 16px;
+  background-color: black;
+  position: relative;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#medium input {
+  width: 530px;
+  height: 30px;
+  appearance: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  /* vertical-align: -35px; */
+  /* display: block; */
+  /* margin: 12px auto 0; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#search-btn {
+  width: 60px;
+  height: 36px;
+  border-radius: 0 16px 16px 0;
+  background-color: #282828;
+  position: absolute;
+  left: 105%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#search-icon {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+}
+
+#voiceSearch-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #282828;
+  position: absolute;
+  left: 630px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+#voiceSearch-btn:hover {
+  background-color: #464646;
+}
+
+#voiceSearch-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 改變搜尋的預設文字 placeholder 的顏色 */
+::placeholder {
+  color: #6c6c6c;
+}
+
+
+/* 點擊 input 不出現外框 */
+input {
+  outline: none;
+}
+
+
+#last {
+  /* background-color: darkslategray; */
+  width: 200px;
+  height: 60px;
+  display: block;
+  float: right;
+  position: relative;
+
+}
+
+#more {
+  width: 30px;
+  height: 24px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+.login {
+  /* block 區塊元素 */
+  width: 80px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  /* margin: 12px 40px 0 auto; */
+  font-size: 14px;
+  color: #3ea6ff;
+  /* text-align: center; */
+  line-height: 30px;
+  position: relative;
+}
+
+.login:hover {
+  background-color: rgba(90, 145, 222, 0.376)
+}
+
+.login-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.loginWords {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+#header p {
+  position: absolute;
+  color: #6c6c6c;
+  font-size: 10px;
+  left: 176px;
+  top: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 600;
+}
+
+#menu {
+  position: absolute;
+  width: 32px;
+  left: 12px;
+  top: 12px;
+}
+
+#logo {
+  position: absolute;
+  width: 112px;
+  left: calc(12px + 32px + 12px);
+  top: 16px;
+}
+
+
+/* #bigbox {
+  width: 100%;
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+
+} */
+
+
+
+/* SIDEBAR -------------------------------------------------*/
+
+#sidebar {
+  /* view port height */
+  height: calc(100vh - 60px);
+  width: 248px;
+  /* background: lightgoldenrodyellow; */
+  left: 0;
+  top: 60px;
+  position: fixed;
+  overflow: auto;
+  font-size: 14px;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar li {
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 191px;
+  line-height: 2.5rem;
+}
+
+#sidebar a {
+  line-height: 2.5rem;
+  display: block;
+  color: white;
+}
+
+#sidebar a:hover {
+  border-radius: 8px;
+  background-color: #282828;
+}
+
+#sidebar a:link {
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  /* background-color: darkmagenta; */
+}
+
+#sidebar .title {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 0;
+  background-color: light;
+  color: white;
+}
+
+
+#sidebar img {
+  scale: 120%;
+}
+
+
+
+.box {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.list img {
+  /* background-color: blue; */
+  width: 28px;
+  height: 20px;
+  transform: translateY(20%);
+}
+
+.guild {
+  font-size: 14px;
+  color: white;
+  line-height: 20px;
+}
+
+/* .item {
+  width: 100%;
+} */
+
+.guildLinks {
+  font-size: 12px;
+  color: #969696;
+  line-height: 20px;
+}
+
+.copyright {
+  width: 200px;
+  height: 60px;
+  padding-top: 14px;
+  color: #969696;
+}
+
+/* CONTAINER-------------------------------------------------*/
+
+#container {
+  /* position: fixed; */
+  right: 0;
+  top: 60px;
+  width: calc(100vw - 248px);
+  margin-left: 248px;
+  margin-top: 120px;
+}
+
+.content {
+  width: calc(100vw - 248px);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  display: block;
+  /* position: fixed; */
+  right: 0;
+  top: 120px;
+  color: white;
+  font-size: 0;
+  /* 消除幽靈空白 */
+}
+
+#selector {
+  width: calc(100vw - 266px);
+  height: 60px;
+  background: black;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  padding: 0 24px;
+  z-index: 1;
+}
+
+#selector a {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-align: center;
+  margin: 5px;
+  background-color: #282828;
+  color: white;
+  line-height: 60px;
+}
+
+#selector a:hover {
+  background-color: #464646;
+  color: white;
+}
+
+#selector a:link {
+  text-decoration: none;
+}
+
+
+
+.card {
+  display: inline-block;
+  width: 384px;
+  height: 328px;
+  /* background-color: aqua; */
+  margin: 16px 8px;
+  /* z-index: 5; */
+  font-size: 14px;
+  color: white;
+}
+
+.video {
+  width: 384px;
+  height: 220px;
+}
+
+
+.card img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  background-color: #282828;
+  object-fit: cover;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  margin: 5px;
+  background-color: #282828;
+}
+
+.details {
+  width: 384px;
+  height: 100px;
+  margin-top: 5px;
+  /* background-color: rgb(202, 162, 113); */
+  position: relative;
+}
+
+
+.meta {
+  position: absolute;
+  /* 記得在父元素加 relative */
+  left: 64px;
+}
+
+
+.vtitle {
+  line-height: 1.3;
+  font-size: 14px;
+  width: 300px;
+  max-height: 44px;
+  /* background-color: rgb(60, 255, 0); */
+  margin: 3px 0;
+  /* 多行文字省略號 */
+  /* https://netivism.com.tw/blog/492 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.channel {
+  line-height: 1.3;
+  font-size: 12px;
+  width: 300px;
+  height: 20px;
+  color: #969696;
+  margin-top: 8px;
+  /* background-color: rgb(195, 173, 173); */
+  /* 單行省略號 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta-line {
+  line-height: 1.3;
+  font-size: 12px;
+  width: 300px;
+  height: 20px;
+  color: #969696;
+  /* background-color: lightcoral; */
+}
+
+.shorts {
+  display: inline-block;
+  width: 242px;
+  height: 430px;
+  /* background-color: aqua; */
+  margin: 16px 12px;
+  /* z-index: 5; */
+  font-size: 14px;
+  color: white;
+}
+
+.shortVideo {
+  width: 242px;
+  height: 360px;
+}
+
+.shorts img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.8rem;
+  background-color: #282828;
+  object-fit: cover;
+}
+
+.shortsDetails {
+  width: 242px;
+  height: 60px;
+  margin-top: 5px;
+  /* background-color: rgb(202, 162, 113); */
+  position: relative;
+}
+
+
+.shortsMeta {
+  position: absolute;
+  /* 記得在父元素加 relative */
+  left: 0px;
+}
+
+.shortsTitle {
+  line-height: 1.3;
+  font-size: 14px;
+  width: 242px;
+  max-height: 44px;
+  margin: 3px 0;
+  /* 多行文字省略號 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.shortsMetaLine {
+  line-height: 1.3;
+  font-size: 12px;
+  width: 242px;
+  height: 20px;
+  color: #969696;
+  /* background-color: lightcoral; */
+}

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChiTube</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <!--  Google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@300;600;700;900&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./css/all.css">
+  <!-- 自己的外部樣式表 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- icons：google font 
+    weight：200, grade：0, OpticalSize：24 -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+  <!-- Header----------------------------------------------- -->
+  <div id="header">
+
+    <div id="first">
+      <img id="menu" src="./images/icons/menu_FILL0.svg">
+      <img id="logo" src="./images/yt_logo_rgb_dark.png" alt="youtube">
+      <p>TW</p>
+    </div>
+
+    <div id="medium">
+      <div id="searchAera">
+
+        <!-- 搜尋框 -->
+        <div id="input-radius">
+          <input type="text" placeholder="搜尋" class="search">
+          <!-- 搜尋按鈕 -->
+          <a style="color: white;" href="#" title="搜尋">
+            <div id="search-btn">
+              <span id="search-icon" class="material-symbols-outlined">
+                search
+              </span>
+            </div>
+          </a>
+        </div>
+        <!-- 語音搜尋按鈕 -->
+        <a style="color: white;" href="#" title="使用語音搜尋">
+          <div id="voiceSearch-btn">
+            <span id="voiceSearch-icon" class="material-symbols-outlined">
+              mic
+            </span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <!-- 解決中間這行往下掉的問題，可以用：
+        1.在 div #first 設定 vertical-align 讓 div 對齊
+        2.設定 #first 的 float left，#medium 也是 left， #last 是 right
+      -->
+
+
+
+    <div id="last">
+      <!-- 設定 -->
+      <a href="#" title="設定">
+        <div id="more">
+          <span id="more-icon" class="material-symbols-outlined">
+            more_vert
+          </span>
+        </div>
+      </a>
+      <!-- 登入 -->
+      <div class="login" style="margin: 12px 40px 0 auto; ">
+        <span class="material-symbols-outlined login-icon">
+          account_circle
+        </span>
+        <span class="loginWords">登入</span>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- BigBox----------------------------------------------- -->
+  <div id="bigbox">
+
+    <!-- Sidebar----------------------------------------------- -->
+    <div id="sidebar">
+      <div class="box">
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                home
+              </span>首頁</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                play_circle
+              </span>Shorts</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                subscriptions
+              </span>訂閱內容</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="box">
+        <ul class="list">
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                history
+              </span>觀看紀錄</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                video_library
+              </span>你的內容</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="box guild">
+        <span>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</span>
+        <div class="login" style="margin: 20px 0 0 0 ;">
+          <span class="material-symbols-outlined login-icon">
+            account_circle
+          </span>
+          <span class="loginWords">登入</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="title">探索</div>
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                local_fire_department
+              </span>發燒影片</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                music_note
+              </span>音樂</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                movie
+              </span>電影</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                nest_remote_comfort_sensor
+              </span>直播</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                sports_esports
+              </span>遊戲</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                newsmode
+              </span>新聞</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                trophy
+              </span>體育</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                podcasts
+              </span>Podcast</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="title">更多 YouTube 功能</div>
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><img class="icon" src="./images/icons/youtube-icon.svg" alt="home"
+                title="home">YouTube
+              Premium</a></li>
+          <li><a href="https://www.youtube.com/"><img class="icon" src="./images/icons/youtubeMusic-icon.svg" alt="home"
+                title="home">YouTube
+              Music</a></li>
+          <li><a href="https://www.youtube.com/"><img class="icon" src="./images/icons/youtubeKids-icon.svg" alt="home"
+                title="home">YouTube
+              Kids</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <ul class="list">
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                settings
+              </span>設定</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                flag
+              </span>檢舉紀錄</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                help
+              </span>說明</a>
+          </li>
+          <li><a href="https://www.youtube.com/"><span class="material-symbols-outlined google-icon">
+                reviews
+              </span>提供意見</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box guildLinks">
+        <span>簡介&nbsp;</span>
+        <span>媒體&nbsp;</span>
+        <span>版權&nbsp;</span>
+        <span>與我們聯絡&nbsp;</span>
+        <br>
+        <span>創作者&nbsp;</span>
+        <span>廣告&nbsp;</span>
+        <span>開發人員&nbsp;</span>
+        <br>
+        <br>
+        <span>條款&nbsp;</span>
+        <span>隱私權&nbsp;</span>
+        <span>政策與安全性&nbsp;</span>
+        <br>
+        <span>YouTube運作方式&nbsp;</span>
+        <span>測試&nbsp;</span>
+        <span>新功能&nbsp;</span>
+
+        <div class="copyright">&copy;2023 wenchicheng</div>
+
+
+      </div>
+
+
+
+    </div>
+
+    <!-- Container----------------------------------------------- -->
+    <div id="container">
+
+      <!-- -------Selector-------- -->
+      <div id="selector">
+        <div>
+          <a href="">全部</a>
+          <a href="">音樂</a>
+          <a href="">已訂閱</a>
+          <a href="">直播中</a>
+          <a href="">美容</a>
+          <a href="">烹飪節目</a>
+          <a href="">觀光</a>
+          <a href="">新聞</a>
+          <a href="">動畫</a>
+          <a href="">遊戲</a>
+          <a href="">遊戲</a>
+        </div>
+      </div>
+
+      <!-- -------Content-------- -->
+      <div class="content">
+
+        <!-- 卡片區 -->
+        <div class="card">
+          <img class="video" src="./images/coverphoto/hq720 (1).webp" alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img src="./images/avatar/01.jpg" alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">第5屆走鐘獎頒獎典禮第5屆走鐘獎頒獎典禮第5屆走鐘獎頒獎典禮</div>
+              <div class="channel">走鐘獎頒獎典禮 Walk Bell John Awards</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="	https://i.ytimg.com/vi/sUwD3GRPJos/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDifblLIHzy8TAYchnYQvJzy5j_wA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/1_BEJaM4WHM-SBNJJfIp7FD7pJolERhbEnTKThHYU2qxiacDbvCoU6c6lnp0DkTjcWTk2bJ0cQ=s68-c-k-c0x00ffffff-no-rj"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">2.5小時實時學習(鋼琴輕音樂) ｜🚢 黃昏的橫濱港｜番茄工作法(25+5)｜自帶倒計時&鈴聲提醒</div>
+              <div class="channel">Seagull Girl</div>
+              <div class="meta-line">觀看次數：1318萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/qvD8nvByXL0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhx6saHSa25OT2eKYE7UrycLjgYg"
+            alt="123" title="123">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/ytc/APkrFKbmcObd8oBt6RURONQ_INOoZ-VPhmrJOXBDKQitLw=s68-c-k-c0x00ffffff-no-rj"
+                  alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">#路易莎 終於發現自己是全台最大K書中心了？怎麼跟星巴克拚？來談路易莎的減法大作戰【懂商業 看商周】</div>
+              <div class="channel">商業周刊</div>
+              <div class="meta-line">觀看次數：2.1萬次．2週前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/WSlV5PW3QP8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAyVBojpmuxr8L44EFFi1WIm4fB6w">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/ru79AJtWC9oUmN18W4RQuHuRQ2lJgoS3qgJQ86k1TM3h7D_yBpWN18oxU83_T1GDCV4SFhI4eow=s68-c-k-c0x00ffffff-no-rj"
+                  alt="泛科學院" alt="222"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">用完就回不去了！取代 PowerPoint 的強大 AI 工具？讓我從此只想用它做簡報？</div>
+              <div class="channel">泛科學院</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/C4-10ci4rt0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBBiM_xkS4tf0hFtLR_LB6HLzOi_g">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/NNTqTn6wd5CWh4-ZgeNx9ai-Rv-S80FG3qfEp8fvONN3IeKjchXzt3H_6Bw8_YvrZiJSjCOC7w=s68-c-k-c0x00ffffff-no-rj"
+                  alt="Muse木棉花-TW"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">【全集馬拉松】擁有超常技能的異世界流浪美食家｜Muse木棉花 動畫 線上看 </div>
+              <div class="channel">Muse木棉花-TW</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/EcA6MnqYv5Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBg5i_BgD5uMBcK8Byvk_dZN4ZYHA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/n2XYYgIEAcNWq_IFce5r37ERiEPtrRkDvQrBnW53bGqUw8CUZ0L9QykN2pm471f9LROltibQ=s68-c-k-c0x00ffffff-no-rj"
+                  alt="Rain Melody<"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">【完整版】動畫電影《蒼鷺與少年》主題曲 - 米津玄師 - 地球儀『中日歌詞』</div>
+              <div class="channel">Rain Melody</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/ARU-ZD9pfO4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLANEhwGIVvPS935ieSpB7rZtXkXpw">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/2mDQh5ZOCIaLqMpcThnLxgdl0YAfAKIeja1ShFW6Q85BlxlnBqCYEtq4AY17_EeVfMLFgEY68w=s68-c-k-c0x00ffffff-no-rj"
+                  alt="玄离199"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">全世界最强的网站，但是你根本不会用？</div>
+              <div class="channel">玄离199</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/TRzNlHMtPog/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAy07EOwq08YFCkXU_3JjB8RO-nlA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/ytc/APkrFKZZLjbo5TxQaaWv4sTG3RK4T2GYxa-ZyKg-Rkwgcg=s68-c-k-c0x00ffffff-no-rj"
+                  alt="志祺七七 X 圖文不符"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">兩年大虧 4000 億，台電為何陷入財務黑洞？現在的能源政策，又有什麼爭議？｜志祺七七</div>
+              <div class="channel">志祺七七 X 圖文不符</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- -------Shorts--------- -->
+
+        <div class="shorts">
+          <img class="shortVideo" src="https://i.ytimg.com/vi_webp/0kkfBDK-OEw/oar2.webp">
+          <div class="shortsDetails">
+            <div class="shortsMeta">
+              <div class="shortsTitle">びっくりする猫</div>
+              <div class="shortsMetaLine">觀看次數：1016萬次</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shorts">
+          <img class="shortVideo"
+            src="https://i.ytimg.com/vi/IvUsw7rZUo8/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBf_Gy0AbnhpO_vui3a11pMVLXeHw">
+          <div class="shortsDetails">
+            <div class="shortsMeta">
+              <div class="shortsTitle">捍衛任務的主角，為何要把錶盤朝向手腕內？</div>
+              <div class="shortsMetaLine">觀看次數：65萬次</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shorts">
+          <img class="shortVideo"
+            src="https://i.ytimg.com/vi/SoXSFvqCRdY/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLDUlWJgHzqS3CQJk2gx4UgUgYj3_g">
+          <div class="shortsDetails">
+            <div class="shortsMeta">
+              <div class="shortsTitle">【呪術廻戦】不存在的記憶是啥 | 第二季37話</div>
+              <div class="shortsMetaLine">觀看次數：30萬次</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shorts">
+          <img class="shortVideo"
+            src="https://i.ytimg.com/vi/5q69q2Oqgqg/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLDPnKF4Wb3jwObPq590L2f2W6H6ig">
+          <div class="shortsDetails">
+            <div class="shortsMeta">
+              <div class="shortsTitle">米其林摆盘的原则：物以稀为贵</div>
+              <div class="shortsMetaLine">觀看次數：483萬次</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shorts">
+          <img class="shortVideo"
+            src="https://i.ytimg.com/vi/h_voWxJNQ0g/hq720.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLCpPzYnppIw-BQH4VqfoiDQ96MJyA">
+          <div class="shortsDetails">
+            <div class="shortsMeta">
+              <div class="shortsTitle">五条悟vs五条勝（ネタ）【強さ比べ】#呪術廻戦 #イナズマイレブン #shorts</div>
+              <div class="shortsMetaLine">觀看次數：421萬次</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shorts">
+          <img class="shortVideo"
+            src="https://i.ytimg.com/vi/wdDIiY2bNxY/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLCkNyoUDjwx8Dpf7-n30MNqt0rOLw">
+          <div class="shortsDetails">
+            <div class="shortsMeta">
+              <div class="shortsTitle">Original Zhenfu Hatsune Miku's Pocket I like the part of playing the flute the
+                most. The strong win</div>
+              <div class="shortsMetaLine">觀看次數：618萬次</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- -------------------------- -->
+
+
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/gMq5PEbdpr4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDu-XduiR-j0MQOrH4aUouQKUVMJA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/_ynwI3pqWQyucyC2IFodROu0AuTCldD2FKuVESvl5Q8U3ic9r3B0VO8WUE6jPoIJRS4UISbcUhM=s68-c-k-c0x00ffffff-no-rj"
+                  alt="it's Live"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">[4K] SEVENTEEN - “God of Music” Band LIVE Concert [it's Live] 現場音樂表演</div>
+              <div class="channel">it's Live</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/tmz4ZoVOB04/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBwXAn8KB5LFWe5b64naOuWGmz6xA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/ytc/APkrFKaKQ_mgU7IFEbfrM62mpmKQw-kUcJd4SIgbOHvogQ=s68-c-k-c0x00ffffff-no-rj"
+                  alt="PAPAYA 電腦教室"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">Microsoft Access 資料庫管理快速上手！征服 Office 家族的最後高牆！</div>
+              <div class="channel">PAPAYA 電腦教室</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/9QqBz3kNHis/hq720_live.jpg?sqp=CITBoqoG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB568dcMNEjSqE3iMDKSWkdI0_6Tw">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/x2QMja25eQfo32dhyNX33v6FUMInefSUtr0TzMDuzmt8BFVJdU1gYT5eL47URaPsteaY_r3UEA=s68-c-k-c0x00ffffff-no-rj"
+                  alt="Amazing Taitung 台東就醬玩"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">【4K】台東金崙大橋即時影像 Taitung Jinlun Bridge Live Camera </div>
+              <div class="channel">Amazing Taitung 台東就醬玩</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/CLUPkcLQm64/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAKrKbuS4JyqvKV5AAL-f0J-jTIPA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/kUaRemmO8oVA1ygqlHodGLwCVztWHpLCd9Cic3KU3lKwjtu3xenO1bucdEPv3nZ1O4LAdMLxfig=s68-c-k-c0x00ffffff-no-rj"
+                  alt="GrandmaCan -我阿嬤都會"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">【html】1小時初學者教學 #html #html教學 #html入門</div>
+              <div class="channel">GrandmaCan -我阿嬤都會</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/jp4xdxcc7WU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDiQc-JFQzUxAMquqTLMEvFioB65g">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/Fpc9128OZ1a6qpNJ2U7LYw9vQCGTQ2S3rl7WceGLoBvnRx7vhxlzz7MwSRlmJNBpeGsNwW5r=s68-c-k-c0x00ffffff-no-rj"
+                  alt="LIBRARY PIANO-라이브러리 피아노"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">【圖書館時間】🎧 圖書館裡很好聽的鋼琴曲 | 放鬆鋼琴</div>
+              <div class="channel">LIBRARY PIANO-라이브러리 피아노</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/yI3W-vrSnng/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDS2OrsLoC1uUjXQYFFEwY50J7VaA">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/NNTqTn6wd5CWh4-ZgeNx9ai-Rv-S80FG3qfEp8fvONN3IeKjchXzt3H_6Bw8_YvrZiJSjCOC7w=s68-c-k-c0x00ffffff-no-rj"
+                  alt="Muse木棉花-TW"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">城市獵人TV版S1 第01話【瀟灑的清道夫 XYZ是危險的雞尾酒】|Muse木棉花 動畫 線上看</div>
+              <div class="channel">Muse木棉花-TW</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/jIBIJaOzvXc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_4X1dGJaTHVxWyfIumuWCqg9HPg">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/8GIWEwchqUH_L-bI5LTj193btc9Ff8Cmqi6SPzKduy0tI8e-7x9Nfl6mn7eaYcughaRoBQ6Xa4c=s68-c-k-c0x00ffffff-no-rj"
+                  alt="睡后收入研究员"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">【超级更新】GPT 4 ALL Tools来了！史上最强AI模型！普通账号就可以体验Plus账号所有功能。</div>
+              <div class="channel">睡后收入研究员</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="video"
+            src="https://i.ytimg.com/vi/JKV4ST4nwXY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-_UYJRIgDSMoQJEoNvo5Iby_PVw">
+          <div class="details">
+            <div class="avatar"><a href="./index.html"><img
+                  src="https://yt3.ggpht.com/XIxEtKkvUSLHiDBazM8kYyKpyESz5LM--vG0F7aMsiqOC2o_IZaKztsqDMj2mcn4ciQzFbvu=s68-c-k-c0x00ffffff-no-rj"
+                  alt="Stone Music Entertainment"></a>
+            </div>
+            <div class="meta">
+              <div class="vtitle">𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 ❤️ 올해의 기대작! 수지의 갓벽한 비주얼과 보컬에 놀라는 &quot;이두나!&quot; OST 모음｜수지, 권진아, BIG
+                Naughty｜Stone Music Playlist</div>
+              <div class="channel">Stone Music Entertainment</div>
+              <div class="meta-line">觀看次數：1,283,937次．4個月前</div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
